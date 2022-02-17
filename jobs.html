@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOOD HUB</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="project.css" rel="stylesheet" type="text/css" />
+<link href="registerstyles.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="cookies.js"></script>
+<script type="text/javascript" src="register.js"></script>
+<script src="text/javascript" type="spam.js"></script>
+<script type="text/javascript">
+
+function makeTitle(h1Title) {
+         document.write("<h1>" + h1Title + "</h1>"); 
+      }
+
+function showEM(userName, emServer) {
+	 
+	 userName = stringReverse(userName); // reverse the text of the userName parameter
+         emServer = stringReverse(emServer); // reverse the text of the emServer paramete
+         var emLink = userName + "@" + emServer; // combine the text of userName and emServer
+	 document.write("<a href='mailto:" +emLink + "'>");
+	 document.write(emLink);
+	 document.write("</a>");
+       }
+   
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+<script type="text/javascript">
+ makeTitle("FOOD HUB");
+ </script>
+  
+</header>
+<nav>
+ <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href=".html">Menu</a></li>
+    <li><a href=".html">Events</a></li>
+    <li><a href="jobs.html">Membership</a></li>
+    <li><a href=".html">Calendar</a></li>
+    
+    <li><a href=".html">About Us</a></li>
+    <li><a href=".html">Contact Us</a></li>
+ </ul>
+</nav>
+
+<main>
+<form name="registerForm" id="registerForm" action="">
+   
+<div id="herojobs">
+</div>
+   
+    <div id="main">
+      <p id="intro">
+         Use this form to register and become member at FOOD HUB.
+         
+      </p>
+      <h1 id="regH1">Registration Form</h1>
+
+      <table>
+        <colgroup>
+           <col id="firstCol" />
+           <col span="3" id="remainingCols" />
+        </colgroup>
+         <tr>
+            <td>First Name</td>
+            <td>
+               <input name="firstName" id="firstName" type="text" />
+            </td>
+            <td>Last</td>
+            <td>
+               <input name="lastName" id="lastName" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>Street</td>
+            <td colspan="3">
+               <input name="street1" id="street1" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td></td>
+            <td colspan="3">
+               <input name="street2" id="street2" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>City</td>
+            <td colspan="3">
+               <input name="city" id="city" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>State</td>	
+            <td colspan="3">
+               <select name="state" id="state" size="1">
+                  <option value="">None</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                  <option value="GU">Guam</option>
+                  <option value="MP">North Mariana Islands</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="AS">Samoa</option>
+                  <option value="VI">Virgin Islands</option>
+                  <option value="AA">AA</option>
+                  <option value="AE">AE</option>
+                  <option value="AP">AP</option>
+               </select>
+            </td>
+         </tr>
+         <tr>
+            <td>Zip/Postal Code</td>
+            <td colspan="3">
+               <input name="zip" id="zip" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>Country</td>
+            <td colspan="3">
+               <input name="country" id="country" value="United States" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>E-mail</td>
+            <td colspan="3">
+               <input name="email" id="email" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>Phone Number</td>
+            <td colspan="3">
+               <input id="phone" name="phone" type="text" />
+            </td>
+         </tr>
+         <tr>
+            <td>Membership</td>
+            <td colspan="3">
+               <label for="member1">One year ($30)</label>
+               <input type="radio" id="member1" name="memberOption" value="1" />
+               <br />
+               <label for="member2">Two year ($45)</label>
+               <input type="radio" id="member2" name="memberOption" value="2"  />
+            </td>
+         </tr>
+      </table>
+
+      <p style="text-align: center">
+         <input id="sbutton" type="button" value="Submit" />
+      </p>
+      <p style="text-align: right">
+        To see submited form go to <a href="accounts.html">Registred</a>
+         page.
+      </p>
+   </div>
+
+   </form>
+
+
+</main>
+<footer>
+ Copyright &copy; 2022 FOOD HUB<br>
+<script type="text/javascript">
+                showEM("alegna","moc.lpm");
+	     </script>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
