@@ -50,8 +50,9 @@ function showEM(userName, emServer) {
 </nav>
 
 <main>
-<form name="registerForm" id="registerForm" action="">
-   
+
+
+
 <div id="herojobs">
 </div>
    
@@ -62,40 +63,66 @@ function showEM(userName, emServer) {
       </p>
       <h1 id="regH1">Registration Form</h1>
 
+
+      <!--Added PHP to HTML site-->
+      <form action="connect.php" method="post">
+      
+      
+
       <table>
         <colgroup>
            <col id="firstCol" />
            <col span="3" id="remainingCols" />
         </colgroup>
          <tr>
+
+            <div class="form-group">
             <td>First Name</td>
             <td>
-               <input name="firstName" id="firstName" type="text" />
+               <input name="firstName" id="firstName" type="text" class="form-control" />
             </td>
+            </div>
+
+
+            <div class="form-group">
             <td>Last</td>
             <td>
-               <input name="lastName" id="lastName" type="text" />
+               <input name="lastName" id="lastName" type="text" class="form-control" />
             </td>
+            </div>
+
          </tr>
          <tr>
+            <div class="form-group">
             <td>Street</td>
             <td colspan="3">
-               <input name="street1" id="street1" type="text" />
+               <input name="street1" id="street1" type="text" class="form-control" />
             </td>
+            </div>
          </tr>
          <tr>
+
             <td></td>
+            <div class="form-group">
             <td colspan="3">
-               <input name="street2" id="street2" type="text" />
+               <input name="street2" id="street2" type="text" class="form-control" />
             </td>
+            </div>
          </tr>
          <tr>
+
+            <div class="form-group">
             <td>City</td>
             <td colspan="3">
-               <input name="city" id="city" type="text" />
+               <input name="city" id="city" type="text" class="form-control" />
             </td>
+            </div>
+
+
          </tr>
          <tr>
+
+            <div class="form-group">
             <td>State</td>	
             <td colspan="3">
                <select name="state" id="state" size="1">
@@ -161,45 +188,88 @@ function showEM(userName, emServer) {
                   <option value="AP">AP</option>
                </select>
             </td>
+            </div>
          </tr>
          <tr>
+
+            <div class="form-group">
             <td>Zip/Postal Code</td>
             <td colspan="3">
-               <input name="zip" id="zip" type="text" />
+               <input name="zip" id="zip" type="text" class="form-control" />
             </td>
+            </div>
+
          </tr>
          <tr>
+            <div class="form-group">
             <td>Country</td>
             <td colspan="3">
-               <input name="country" id="country" value="United States" type="text" />
+               <input name="country" id="country" value="United States" type="text" class="form-control" />
             </td>
+            </div>
+
          </tr>
+         
+         <!--
+         <div class ="form-group">
+            <td>gender</td>
+            <td colspan="2">
+            <div>
+               <label for="male" class="radio-inline">
+               <input type="radio" name="gender" value="m" id="male"/>Male</label>
+            
+               <label for="female" class="radio-inline">
+               <input type="radio" name="gender" value="f" id="female"/>Female</label>
+
+               <label for="other" class="radio-inline">
+               <input type="radio" name="gender" value="o" id="other"/>Other</label>
+            <td>
+            </div>
+
+
+
+            </div>
+         -->
+
          <tr>
+            <div class="form-group">
             <td>E-mail</td>
             <td colspan="3">
-               <input name="email" id="email" type="text" />
+               <input name="email" id="email" type="text" class="form-control" />
             </td>
+            </div>
+
          </tr>
+
          <tr>
+            <div class="form-group">
+            <td>Password</td>
+            <td colspan="3">
+               <input id="password" name="password" type="text" class="form-control" />
+            </td>
+            </div>
+
+         </tr>
+            
+
+
+         <tr>
+            <div class="form-group">
             <td>Phone Number</td>
             <td colspan="3">
-               <input id="phone" name="phone" type="text" />
+               <input id="phone" name="phone" type="text" class="form-control" />
             </td>
+            </div>
+
          </tr>
          <tr>
-            <td>Membership</td>
-            <td colspan="3">
-               <label for="member1">One year ($30)</label>
-               <input type="radio" id="member1" name="memberOption" value="1" />
-               <br />
-               <label for="member2">Two year ($45)</label>
-               <input type="radio" id="member2" name="memberOption" value="2"  />
-            </td>
+
+            
          </tr>
       </table>
 
       <p style="text-align: center">
-         <input id="sbutton" type="button" value="Submit" />
+         <input type="submit"  class="btn btn-primary" />
       </p>
       <p style="text-align: right">
         To see submited form go to <a href="accounts.html">Registred</a>
