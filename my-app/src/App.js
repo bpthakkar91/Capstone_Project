@@ -2,6 +2,16 @@
 
 import './project.css';
 
+import React from 'react';
+
+import Navbar from './Components/Navbar';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './Pages/Home';
+import Reports from './Pages/Reports';
+import Products from './Pages/Products';
+
 function App() {
   return (
     <div className="App">
@@ -10,7 +20,16 @@ function App() {
           <h1> FOOD HUB</h1>
           </header>
           <nav>
-            
+          <>
+           <Router>
+              <Navbar />
+              <Switch>
+                <Route path='/' />
+                <Route path='/reports' component={Home} />
+              </Switch>
+            </Router>
+          </>
+          {/*
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="menu.html">Menu</a></li>
@@ -20,7 +39,7 @@ function App() {
               <li><a href="template.html">About Us</a></li>
               <li><a href="">Contact Us</a></li>
             </ul>
-
+  */}
           </nav>
           <main>
           <div id="heroroad">
