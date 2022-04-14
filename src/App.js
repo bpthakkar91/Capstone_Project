@@ -17,20 +17,18 @@ function App() {
     <div className="App">
               <div id="wrapper">
           <header>
-          <h1> <>
+          <h1> FOOD HUB</h1>
+          </header>
+          <nav>
+          <>
            <Router>
-              <navbar />
+              <Navbar />
               <Switch>
                 <Route path='/' />
                 <Route path='/reports' component={Home} />
               </Switch>
             </Router>
-          </></h1>
-          
-          </header>
-          
-          <nav>
-         
+          </>
           {/*
             <ul>
               <li><a href="index.html">Home</a></li>

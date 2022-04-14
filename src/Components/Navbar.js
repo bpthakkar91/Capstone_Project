@@ -17,35 +17,6 @@ import './Navbar.css';
 import { IconContext } from 'react-icons';
 
 
-import Navbar from 'react-bootstrap/Navbar'
-
-
-function navbar(){
-
-    const navbar= () => {
-        return(
-        <>
-        <Navbar bg="dark" variant="dark">
-            <container>
-            <Navbar.Brand href="#home">Food Source Hub</Navbar.Brand>
-            <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#Calendar">Calendar</Nav.Link>
-                <Nav.Link href="#Join">Join</Nav.Link>
-            </Nav>
-            </container>
-        </Navbar>
-    
-        </>
-        );
-    }
-
-}
-
-
-
-
-/*
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
@@ -87,6 +58,6 @@ function Navbar() {
         </>
     );
 }
-*/
+
 export default Navbar;
 
